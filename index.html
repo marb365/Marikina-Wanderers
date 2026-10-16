@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARIKINA CITY — Travel Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="site-nav">
+  <a href="#top" class="mark" aria-label="Home">
+    <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+      <path d="M4 22L11 10L15 16L19 9L26 22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="#top">Home</a>
+    <a href="#explore">Places to See</a>
+    <a href="#visit">Plan a visit</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#feedback">Feedback</a>
+    <a href="file/member.html">Team</a>
+    <span class="nav-indicator" aria-hidden="true"></span>
+  </nav>
+  <a href="#contact" class="btn btn-ghost">Contact</a>
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-progress" id="navProgress"></div>
+</header>
+
+<section id="top" class="hero" aria-roledescription="carousel" aria-label="Destination highlights">
+
+  <div class="hero-slides">
+
+    <div class="hero-slide is-active" data-slide="0">
+      <img class="scene" fetchpriority="high" decoding="async" src="images/ShoeMuseum.jpg" alt="Marikina Footwear Museum">
+    </div>
+
+    <div class="hero-slide" data-slide="1">
+      <img class="scene" src="images/KapitanMoy.jpg" alt="Kapitan Moy heritage house">
+    </div>
+
+    <div class="hero-slide" data-slide="2">
+      <img class="scene" src="images/ClockTower.jpg" alt="Marikina City clock tower">
+    </div>
+  </div>
+
+  <div class="hero-scrim"></div>
+
+  <div class="hero-content">
+    <p class="hero-kicker">Marikina City, Philippines</p>
+    <h1 class="hero-title" data-hero-title>Marikina City Travel Guide</h1>
+    <p class="hero-copy" data-hero-copy>From centuries-old heritage houses to the birthplace of the country's shoe industry and a historic clock tower — discover a walkable Marikina with more history than its size suggests.</p>
+    <div class="hero-actions">
+      <a href="#explore" class="btn btn-solid">Read the guide</a>
+      <a href="#gallery" class="btn btn-outline">See photos</a>
+    </div>
+  </div>
+
+  <div class="hero-controls">
+    <button class="hero-arrow" data-dir="-1" aria-label="Previous slide">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path d="M11 3 L5 9 L11 15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="hero-thumbs" role="tablist" aria-label="Destination aspects">
+      <button class="hero-thumb is-active" role="tab" aria-selected="true" data-index="0">
+        <span class="thumb-label">SHOE MUSEUM</span>
+      </button>
+      <button class="hero-thumb" role="tab" aria-selected="false" data-index="1">
+        <span class="thumb-label">KAPITAN MOY HOUSE</span>
+      </button>
+      <button class="hero-thumb" role="tab" aria-selected="false" data-index="2">
+        <span class="thumb-label">CLOCK TOWER</span>
+      </button>
+    </div>
+
+    <button class="hero-arrow" data-dir="1" aria-label="Next slide">
+      <svg width="18" height="18" viewBox="0 0 18 18"><path d="M7 3 L13 9 L7 15" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+
+  <div class="hero-progress">
+    <span class="hero-count"><span data-current>1</span> / <span data-total>3</span></span>
+    <div class="progress-track"><div class="progress-fill" data-progress-fill></div></div>
+  </div>
+</section>
+
+<section id="explore" class="explore">
+ <div class="explore-inner">
+  <div class="explore-head">
+    <div>
+      <h2 class="reveal">Places to See</h2>
+      <p class="reveal" style="--d:.08s">From a historic shoe museum to a heritage house turned restaurant and a vibrant public park — here are the stops worth building your Marikina visit around.</p>
+    </div>
+  </div>
+
+  <div class="explore-track" data-explore-track>
+
+    <a href="file/shoegallery.html" class="explore-card reveal-card">
+      <div class="explore-card-image"><img loading="lazy" decoding="async" src="file/pictures/-2.jpg" alt="Marikina Shoe Museum"></div>
+      <div class="explore-card-caption">
+        <p class="explore-card-tag">Museum · ₱50 entry</p>
+        <h3>Marikina Shoe Museum</h3>
+      </div>
+      <span class="explore-card-arrow" aria-hidden="true">
+        <svg class="arrow-diag" width="18" height="18" viewBox="0 0 18 18"><path d="M5 13 L13 5 M7 5 H13 V11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="arrow-right" width="18" height="18" viewBox="0 0 18 18"><path d="M3 9 H15 M10 4 L15 9 L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a href="file/kapitanmoygallery.html" class="explore-card reveal-card">
+      <div class="explore-card-image"><img loading="lazy" decoding="async" src="file/pictures/41.jpg" alt="Kapitan Moy Heritage House" style="--zoom:1.7; transform-origin:58% 52%"></div>
+      <div class="explore-card-caption">
+        <p class="explore-card-tag">Heritage house · Restaurant</p>
+        <h3>Kapitan Moy House</h3>
+      </div>
+      <span class="explore-card-arrow" aria-hidden="true">
+        <svg class="arrow-diag" width="18" height="18" viewBox="0 0 18 18"><path d="M5 13 L13 5 M7 5 H13 V11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="arrow-right" width="18" height="18" viewBox="0 0 18 18"><path d="M3 9 H15 M10 4 L15 9 L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <a href="file/clocktowergallery.html" class="explore-card reveal-card">
+      <div class="explore-card-image"><img loading="lazy" decoding="async" src="file/pictures/57.jpg" alt="Marikina Clock Tower"></div>
+      <div class="explore-card-caption">
+        <p class="explore-card-tag">Public park · Free entry</p>
+        <h3>Marikina Clock Tower</h3>
+      </div>
+      <span class="explore-card-arrow" aria-hidden="true">
+        <svg class="arrow-diag" width="18" height="18" viewBox="0 0 18 18"><path d="M5 13 L13 5 M7 5 H13 V11" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="arrow-right" width="18" height="18" viewBox="0 0 18 18"><path d="M3 9 H15 M10 4 L15 9 L10 14" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+  </div>
+ </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="visit-inner">
+    <h2 class="reveal">Plan your visit</h2>
+    <p class="reveal" style="--d:.08s">The Shoe Museum and Kapitan Moy House sit almost next door on J.P. Rizal Street, while the Clock Tower is a short ride away on Sumulong Highway.</p>
+  </div>
+
+  <div class="visit-maps">
+    <div class="visit-map-card reveal-card">
+      <iframe
+        src="https://maps.google.com/maps?q=14.629472,121.096333&z=17&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map to the Shoe Museum">
+      </iframe>
+      <p><strong>Shoe Museum</strong><br>315 J.P. Rizal St, Marikina, 1800 Metro Manila</p>
+    </div>
+
+    <div class="visit-map-card reveal-card">
+      <iframe
+        src="https://maps.google.com/maps?q=14.63065,121.09560&z=17&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map to Kapitan Moy">
+      </iframe>
+      <p><strong>Kapitan Moy House</strong><br>323 Jose P. Rizal St, Marikina, 1800 Metro Manila</p>
+    </div>
+
+    <div class="visit-map-card reveal-card">
+      <iframe
+        src="https://maps.google.com/maps?q=14.6354,121.0977&z=17&ie=UTF8&iwloc=&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Map to the Clock Tower">
+      </iframe>
+      <p><strong>Clock Tower</strong><br>41 Sumulong Hwy, Marikina, 1800 Metro Manila</p>
+    </div>
+  </div>
+
+ 
+</section>
+
+<section id="gallery" class="gallery">
+  <h2 class="reveal">Gallery</h2>
+  <p class="gallery-subtitle reveal" style="--d:.08s">Hover a photo to expand it (or tap it on your phone).</p>
+  <div class="panel-gallery">
+    <div class="gallery-panel reveal-card" style="background-image:url('images/6.jpg')"></div>
+    <div class="gallery-panel reveal-card" style="background-image:url('images/36.jpg')"></div>
+    <div class="gallery-panel reveal-card" style="background-image:url('images/42.jpg')"></div>
+    <div class="gallery-panel reveal-card" style="background-image:url('images/KapitanMoygroup.jpg')"></div>
+    <div class="gallery-panel reveal-card" style="background-image:url('images/63.jpg')"></div>
+    <div class="gallery-panel reveal-card" style="background-image:url('images/60.jpg')"></div>
+  </div>
+</section>
+<section id="feedback" class="feedback">
+  <div class="feedback-inner">
+    <div class="feedback-head">
+      <span class="section-eyebrow reveal">Your voice</span>
+      <h2 class="reveal" style="--d:.06s">Feedback &amp; Comments</h2>
+      <p class="reveal" style="--d:.12s">Visited Marikina or just browsing the guide? Let us know what you think — suggestions, corrections, or just a hello.</p>
+    </div>
+
+    <div class="feedback-grid">
+      <form class="feedback-form reveal" id="feedbackForm">
+        <label>
+          <span>Name</span>
+          <input type="text" id="fbName" placeholder="Your name" required>
+        </label>
+        <div class="fb-group" role="group" aria-labelledby="fbRatingLbl"><span class="fb-label" id="fbRatingLbl">Rating <em class="fb-rating-text" id="fbRatingText">optional</em></span><div class="fb-stars" id="fbStars">
+            <button type="button" class="fb-star" data-value="1" aria-label="1 star">★</button>
+            <button type="button" class="fb-star" data-value="2" aria-label="2 stars">★</button>
+            <button type="button" class="fb-star" data-value="3" aria-label="3 stars">★</button>
+            <button type="button" class="fb-star" data-value="4" aria-label="4 stars">★</button>
+            <button type="button" class="fb-star" data-value="5" aria-label="5 stars">★</button>
+          </div></div>
+        <label>
+          <span>Your feedback</span>
+          <textarea id="fbMessage" rows="4" placeholder="Tell us what you liked, or what we should add..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-solid">Send Feedback</button>
+        <p class="fb-status" id="fbStatus" role="status"></p>
+        <p class="fb-note">Feedback is saved on this device only, so we can show it back to you here — it isn't sent anywhere.</p>
+      </form>
+
+      <div class="feedback-list-wrap reveal" style="--d:.12s">
+        <div class="fb-list-head"><h3>Recent comments</h3><div class="fb-summary" id="fbSummary" hidden><span class="fb-avg" id="fbAvg">0.0</span><span class="fb-avg-stars" id="fbAvgStars"></span><span class="fb-count" id="fbCount"></span></div></div>
+        <div class="feedback-list" id="feedbackList">
+          <p class="fb-empty" id="fbEmpty">No comments yet — be the first to leave one!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<button class="to-top" id="toTop" aria-label="Back to top" type="button">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-about reveal">
+      <a href="#top" class="mark" aria-label="Home">
+        <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+          <path d="M4 22L11 10L15 16L19 9L26 22" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+      <p>From Kapitan Moy's first pair of shoes to a city of makers. Explore Marikina, one landmark at a time.</p>
+    </div>
+
+	<nav class="footer-links reveal" aria-label="Footer">
+      <a href="#explore">Places to See</a>
+      <a href="#visit">Plan a visit</a>
+      <a href="#gallery">Gallery</a>
+      <a href="file/member.html">Meet the Team</a>
+    </nav>
+
+    <div class="footer-contact reveal" id="contact">
+      <h3>Contact</h3>
+      <p>justinebaylon24@gmail.com</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Marikina City. Built for a school project.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
